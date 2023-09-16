@@ -1,0 +1,33 @@
+<p>eventbinding works!</p>
+
+
+<button (click)="onClick()" >Click</button>
+<br><br>
+<img title="on Click Image" src="../../assets/img.jpg" (click)="onImg()" alt="">
+<hr>
+
+<button value="Doller event occur.." (click)="onSend($event)" >Send</button>
+<br><br>
+
+<input #inputname type="text" placeholder="Enter the Name"> <br><br>
+<button (click)="onSend1(inputname)" >Send</button> <br><br>
+
+<input #inputname1 type="text" placeholder="Enter the Name"> <br><br>
+<button (click)="onSend2(inputname1.value)" >Send</button>
+
+
+<input #num1 type="text" placeholder="Enter the num1"><br><br>
+<input #num2 type="text" placeholder="Enter the num2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button>
+<hr>
+<input [value]="result" type="text" placeholder="Result">
+<hr>
+
+<input (change)="onChange()">
+<hr>
+<input #data (keyup)="onKeyUp(data)" type="text" placeholder="Key up event"> <br><br>
+<input (keydown)="onKeyDown()" type="text"  placeholder=" The key down event">
+<hr>
+<input #sqrnum   type="text" placeholder="Enter the number" >
+<br><br>
+<button (click)="res=(sqrnum.value+sqrnum.value)" >Square</button>{{res}}

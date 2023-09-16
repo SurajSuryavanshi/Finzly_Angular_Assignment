@@ -1,0 +1,17 @@
+.success{
+    color: rgb(7, 246, 11);
+}
+
+.danger{
+    color: rgb(17, 227, 243);
+}
+
+.warning{
+    color: rgb(250, 167, 12);
+}
+
+.special{
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}

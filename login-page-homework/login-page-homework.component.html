@@ -1,0 +1,19 @@
+<div class="username">
+    <h2>Login Page</h2>
+    <br>
+    <label class="user"
+    for="username">Username:</label>
+    <input #username type="text" id="username" name="username" required>
+  </div>
+  <div class="password"><br>
+    <label for="password">Password:</label>
+    <input #password type="password" id="password" name="password" required>
+  </div><br><br>
+  <div class="button">
+  <button (click)="onLogin(username.value, password.value)">Login</button>
+    <br>
+  
+  <div *ngIf="loginStatus" class="popup">
+    {{ loginStatus }}
+  </div>
+
